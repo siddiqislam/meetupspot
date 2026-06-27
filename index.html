@@ -3,14 +3,15 @@
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="theme-color" content="#2c3e50"> -->
+    <title>Meetup Spot Calculator</title>
+    <meta name="author" content="Siddiq Islam">
     <meta name="description" content="Find a central place to meet with your friends">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales the page well for every device -->
+    <meta name="theme-color" content="#556B2F"> <!-- Browser will match page's color -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Meetup Spot">
-    <title>Meetup Spot Calculator</title>
     <!-- <link rel="manifest" href="manifest.json"> -->
     <!-- <link rel="apple-touch-icon" href="icon-192.png"> -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
@@ -18,22 +19,46 @@
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"> -->
     <link rel="stylesheet" href="styles.css"> <!-- link to external css style sheet -->
     <!-- <link rel="stylesheet" href="styles-modals.css"> -->
-    <script>
+    <!-- <script>
         if (localStorage.getItem('caffeine_theme') === 'dark') {
             document.documentElement.dataset.theme = 'dark';
         }
-    </script>
+    </script> -->
     <!-- Could add a Favicon -->
 </head>
     
 <body>
-    <p>Test</p>
-    <p>1. Type in the locations of you and your friends to find out where you should meet!</p>
-
-    <!-- Left panel -->
+    <!-- Left panel (user interface) -->
     <div class="panel">
-        <p>2. Type in the locations of you and your friends to find out where you should meet!</p>
+        <!-- Type box -->
+        <section>
+            <p>Enter the locations of you and your friends and calculate the most central point meet!</p>
+            <form action="/locationslist.php">>
+                <input type="text" name="location"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        
+        <!-- List of entered locations -->
+        <section>
+            <!-- Show entered locations here -->
+            <!-- Cross button on each location to remove -->
+        </section>
+        
+        <!-- Calculate button -->
+        <section>
+            <p>Calculate!</p>
+        </section>
+
+        <!-- For future: add functionality to weight locations (e.g., someone can travel further?) -->
     </div>
+
+    <div>
+        <!-- Right panel (map) -->
+        <!-- Insert interactive map with pins for friend locations and meetup spot -->
+    </div>
+    
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
 </body>
     
 </html>
