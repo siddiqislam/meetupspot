@@ -1,5 +1,8 @@
 /* Main body of page */
 body {
+  background-color: red !important;
+}
+body {
   background-color: #556B2F;
 }
 
