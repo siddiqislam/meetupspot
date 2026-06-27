@@ -1,18 +1,14 @@
 /* Main body of page */
 body {
-  background-color: red !important;
-}
-body {
   background-color: #556B2F;
 }
 
 /* Elements in page */
 .panel {
+    max-width:30%
     background-color: white;
     color: grey;
-    margin: 20px;
+    padding: 20px;
     border-radius: 20px;
-    padding: 28px;
-    gap: 28px;
     min-width: 0;
 }
