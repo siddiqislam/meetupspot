@@ -5,8 +5,11 @@ body {
 
 <!-- Elements in page -->
 .mytextbox {
-  background-color: white;
-  color: grey;
-  margin: 20px;
-  padding: 20px;
+    backgroundicolor: white;
+    color: grey;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 28px;
+    gap: 28px;
+    min-width: 0;
 }
