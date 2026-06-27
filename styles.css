@@ -1,16 +1,18 @@
 /* Main body of page */
 body {
   background-color: #556B2F;
+  margin: 0;
+  display: flex;
+  height: 100vh;
 }
 
-/* Elements in page */
+/* Left panel (user interface) */
 .panel {
-    max-width:30%;
-    background-color: white;
-    color: grey;
-    padding: 20px;
-    border-radius: 20px;
-    min-width: 0;
+  width: 30%;
+  background-color: white;
+  color: grey;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .calculatebutton {
@@ -20,4 +22,10 @@ body {
     padding: 20px;
     border-radius: 20px;
     min-width: 0;
+}
+
+/* Right panel (map area) */
+body > div:not(.panel) {
+  flex: 1;
+  background-color: #eee;
 }
